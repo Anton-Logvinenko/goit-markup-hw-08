@@ -1,0 +1,60 @@
+/* постоянные клиенты */
+
+//  mob. 210x92
+//  tab. 226x92
+//  desk. 170x92
+
+.list-client {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+.item-client {
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 15px * 4) / 2);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 15px * 6) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+
+  .item-client__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 100%;
+  }
+
+  border: 1px solid var(--icons_color);
+  border-radius: 4px;
+
+  transition: border-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-bg-color);
+  }
+
+  .item-client__link:hover .item-client__icon,
+  .item-client__link:focus .item-client__icon {
+    fill: var(--accent-bg-color);
+  }
+}
+.item-client__icon {
+  transition: fill 250ms var(--timing-function);
+  fill: var(--icons_color);
+
+  .item-client__link:hover &,
+  .item-client__link:focus & {
+    fill: var(--accent-bg-color);
+  }
+}

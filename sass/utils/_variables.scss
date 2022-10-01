@@ -1,0 +1,20 @@
+:root {
+  /* font */
+  --main-font-famaly: 'Roboto', sans-serif;
+  --main-font-size: 14px;
+
+  /* Text color */
+  --main-txt-color: #212121;
+  --secondary-txt-color: #757575;
+  --light-txt-color: #ffffff;
+  --accent-txt-color: #2196f3;
+
+  /* BG calor */
+  --secondary-bg-color: #2f303a;
+  --accent-bg-color: #2196f3;
+  --light-bg-color: #f5f4fa;
+  --icons_color: #afb1b8;
+
+  /* other */
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

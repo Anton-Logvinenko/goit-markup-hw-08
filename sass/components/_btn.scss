@@ -1,0 +1,63 @@
+// hero-btn
+
+.hero-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 10px 24px;
+
+  @media screen and(min-width:1200px) {
+    padding: 10px 32px;
+  }
+
+  color: var(--light-txt-color);
+  font-family: var(--main-font-famaly);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background-color: var(--accent-bg-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+}
+
+// Портфолио btn
+.btn {
+  padding: 6px 22px;
+
+  background: var(--light-bg-color);
+  font-family: var(--main-font-famaly);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-color);
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: transparent;
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--light-txt-color);
+    background-color: var(--accent-bg-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+.list-btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}

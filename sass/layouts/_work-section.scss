@@ -1,0 +1,38 @@
+/* Чим ми займаємося */
+
+.section--nopadding-top {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.work {
+  display: flex;
+  justify-content: center;
+}
+.work__item + .work__item {
+  margin-left: 30px;
+}
+
+.work__img-box {
+  position: relative;
+}
+
+.work__title {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 70px;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-txt-color);
+}

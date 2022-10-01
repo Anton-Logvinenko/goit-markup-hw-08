@@ -1,0 +1,57 @@
+/* секция Наші особливості */
+
+.qualities {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.qualities__item {
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 15px * 4) / 2);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.qualities__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: var(--light-bg-color);
+}
+
+.qualities__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.qualities__text {
+  color: var(--secondary-txt-color);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

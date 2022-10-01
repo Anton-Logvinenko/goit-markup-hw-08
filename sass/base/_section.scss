@@ -1,0 +1,12 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section--nopadding-top {
+  padding-top: 0px;
+}
+
+.section--BG-dark {
+  background-color: var(--light-bg-color);
+}

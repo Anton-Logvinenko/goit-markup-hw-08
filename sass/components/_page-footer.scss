@@ -1,0 +1,112 @@
+// | Оформление  footer
+
+.footer {
+  background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container-footer {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+.contacts-group {
+  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    flex-grow: 1;
+  }
+}
+
+.list-footer {
+  font-style: normal;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.list-footer > .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-footer {
+  text-decoration: none;
+  color: var(--light-txt-color);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-color);
+  }
+}
+
+.link-footer {
+  text-decoration: none;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-color);
+  }
+}
+
+.social {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.title-socials {
+  margin-bottom: 20px;
+
+  color: var(--light-txt-color);
+  font-weight: 700;
+  font-size: var(--main-font-size);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.socials__link--BGdark {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-bg-color);
+  }
+}
+.socials__icon--fill-light {
+  fill: var(--light-txt-color);
+}
