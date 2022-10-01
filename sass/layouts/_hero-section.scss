@@ -14,21 +14,21 @@
 
   // Mobile
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/bg/bg-sm-@1x.png);
+    url(../images/bg/bg-sm-@1x.png);
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/images/bg/bg-sm-@2x.png);
+      url(../images/bg/bg-sm-@2x.png);
   }
 
   // Tablet
   @media screen and (min-width: 481px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/images/bg/bg-md-@1x.png);
+      url(../images/bg/bg-md-@1x.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(/images/bg/bg-md-@2x.png);
+        url(../images/bg/bg-md-@2x.png);
     }
   }
   // Desktop
@@ -37,11 +37,11 @@
     padding-bottom: 200px;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/images/bg/bg-lg-@1x.png);
+      url(../images/bg/bg-lg-@1x.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(/images/bg/bg-lg-@2x.png);
+        url(../images/bg/bg-lg-@2x.png);
     }
   }
 }
