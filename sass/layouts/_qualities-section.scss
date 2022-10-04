@@ -3,7 +3,6 @@
 .qualities {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -11,11 +10,11 @@
 
 .qualities__item {
   @media screen and (max-width: 767px) {
-    max-width: 450px;
+    max-width: 100%;
   }
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 15px * 4) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 
   &:not(:last-child) {
@@ -24,7 +23,7 @@
     }
   }
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    flex-basis: calc((100% - 30px * 3) / 4);
   }
 }
 

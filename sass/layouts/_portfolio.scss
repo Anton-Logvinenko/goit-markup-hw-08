@@ -3,8 +3,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    gap: 30px;
   }
 }
 
@@ -21,15 +20,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 4 * 15px) / 2);
-    margin-top: 30px;
-    margin-left: 30px;
+    flex-basis: calc((100% - 30px * 1) / 2);
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 6 * 15px) / 3);
-    margin-top: 30px;
-    margin-left: 30px;
+    flex-basis: calc((100% - 30px * 2) / 3);
   }
 }
 .link-portfolio {

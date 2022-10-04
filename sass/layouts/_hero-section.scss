@@ -33,9 +33,6 @@
   }
   // Desktop
   @media screen and (min-width: 769px) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/bg/bg-lg-@1x.png);
 
@@ -43,6 +40,11 @@
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/bg/bg-lg-@2x.png);
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
